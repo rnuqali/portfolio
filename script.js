@@ -336,6 +336,7 @@ document.addEventListener("click", (event) => {
 });
 
 
+
 /* =========================
    ESC KEY CLOSES MENU
 ========================= */
@@ -352,3 +353,26 @@ document.addEventListener("keydown", (event) => {
     }
   }
 });
+/* =========================
+   BACK TO TOP
+========================= */
+
+const backToTop = document.getElementById("backToTop");
+
+if (backToTop) {
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 350) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
