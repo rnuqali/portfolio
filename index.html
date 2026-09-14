@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8" />
@@ -23,10 +23,9 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-
 <body>
 
-  <!- ================= HEADER ================= -->
+  <!-- ================= HEADER ================= -->
 
   <header class="site-header">
 
@@ -36,22 +35,64 @@
         RN<span>.</span>
       </a>
 
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav" id="mainNav">
+
+        <a href="#about" data-i18n="navAbout">
+          About
+        </a>
+
+        <a href="#projects" data-i18n="navProjects">
+          Projects
+        </a>
+
+        <a href="#skills" data-i18n="navSkills">
+          Skills
+        </a>
+
+        <a href="#experience" data-i18n="navExperience">
+          Experience
+        </a>
+
+        <a href="#contact" data-i18n="navContact">
+          Contact
+        </a>
+
       </nav>
 
-      <a
-        class="nav-cta"
-        href="Rawan_Nuqali_Resume.pdf"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Resume
-      </a>
+      <div class="nav-actions">
+
+        <button
+          class="language-toggle"
+          id="languageToggle"
+          type="button"
+          aria-label="Change language"
+        >
+          AR
+        </button>
+
+        <a
+          class="nav-cta"
+          href="Rawan_Nuqali_Resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          data-i18n="resume"
+        >
+          Resume
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
 
     </div>
 
@@ -68,19 +109,27 @@
 
         <div class="hero-copy reveal">
 
-          <p class="eyebrow">HELLO, I'M</p>
+          <p class="eyebrow" data-i18n="heroEyebrow">
+            HELLO, I'M
+          </p>
 
           <h1>
             Rawan <span>Nuqali</span>
           </h1>
 
           <h2>
-            Computer Science Graduate
+            <span data-i18n="heroTitle1">
+              Computer Science Graduate
+            </span>
+
             <span class="dot">•</span>
-            AI &amp; Data Enthusiast
+
+            <span data-i18n="heroTitle2">
+              AI &amp; Data Enthusiast
+            </span>
           </h2>
 
-          <p class="hero-text">
+          <p class="hero-text" data-i18n="heroText">
             I build practical software and AI-powered solutions with a focus on
             intelligent systems, data-driven decision making, and user-centered
             technology.
@@ -88,7 +137,11 @@
 
           <div class="hero-actions">
 
-            <a class="btn primary" href="#projects">
+            <a
+              class="btn primary"
+              href="#projects"
+              data-i18n="viewProjects"
+            >
               View Projects
             </a>
 
@@ -97,12 +150,12 @@
               href="Rawan_Nuqali_Resume.pdf"
               target="_blank"
               rel="noreferrer"
+              data-i18n="downloadCV"
             >
               Download CV
             </a>
 
           </div>
-
 
           <div class="quick-links">
 
@@ -114,7 +167,7 @@
               LinkedIn ↗
             </a>
 
-            <a href="mailto:rnuqali@gmail.com">
+            <a href="mailto:rnuqali@gmail.com" data-i18n="emailLink">
               Email ↗
             </a>
 
@@ -127,7 +180,6 @@
 
           <div class="orb orb-one"></div>
           <div class="orb orb-two"></div>
-
 
           <div class="code-card">
 
@@ -148,7 +200,6 @@
       <span class="purple">return</span> <span class="string">"useful tech"</span></code></pre>
 
           </div>
-
 
           <div class="mini-card mini-one">
             Python
@@ -177,46 +228,44 @@
 
         <div class="section-heading reveal">
 
-          <p class="eyebrow dark">
+          <p class="eyebrow dark" data-i18n="aboutEyebrow">
             ABOUT ME
           </p>
 
-          <h3>
+          <h3 data-i18n="aboutTitle">
             Building technology that solves real problems.
           </h3>
 
         </div>
 
-
         <div class="about-copy reveal">
 
-          <p>
+          <p data-i18n="aboutText1">
             Computer Science graduate from Umm Al-Qura University with
             hands-on experience in software development, IT operations,
             and AI-powered systems through internship and academic projects.
           </p>
 
-          <p>
+          <p data-i18n="aboutText2">
             My work spans machine learning, computer vision, web development,
             system analysis, and intelligent decision-support systems.
           </p>
-
 
           <div class="stat-row">
 
             <div>
               <strong>3.58/4.00</strong>
-              <span>GPA</span>
+              <span data-i18n="gpa">GPA</span>
             </div>
 
             <div>
-              <strong>Honors</strong>
-              <span>Graduate</span>
+              <strong data-i18n="honors">Honors</strong>
+              <span data-i18n="graduate">Graduate</span>
             </div>
 
             <div>
               <strong>2026</strong>
-              <span>Graduation</span>
+              <span data-i18n="graduation">Graduation</span>
             </div>
 
           </div>
@@ -236,15 +285,15 @@
 
         <div class="section-heading centered reveal">
 
-          <p class="eyebrow dark">
+          <p class="eyebrow dark" data-i18n="projectsEyebrow">
             FEATURED WORK
           </p>
 
-          <h3>
+          <h3 data-i18n="projectsTitle">
             Selected Projects
           </h3>
 
-          <p>
+          <p data-i18n="projectsText">
             Projects combining AI, software engineering, data,
             and real-world problem solving.
           </p>
@@ -252,20 +301,19 @@
         </div>
 
 
-        <!-- ================= FREDT ================= -->
+        <!-- ================= PROJECT 01 - FREDT ================= -->
 
         <article class="project-feature reveal">
 
-          <div class="project-visual fredt">
+          <div class="project-visual">
 
             <img
               src="fredt-dashboard.png"
               alt="FREDT Smart Evacuation System Dashboard"
-              class="fredt-dashboard-image"
+              class="project-image"
             />
 
           </div>
-
 
           <div class="project-copy">
 
@@ -273,29 +321,25 @@
               01
             </span>
 
-            <h4>
+            <h4 data-i18n="fredtTitle">
               FREDT — AI-Powered Smart Evacuation System
             </h4>
 
-            <p>
+            <p data-i18n="fredtText">
               An intelligent emergency-response platform for indoor fire
               scenarios. It combines crowd monitoring, fire-risk prediction,
               and risk-aware route optimization to support safer evacuation
               decisions.
             </p>
 
-
             <div class="tags">
-
               <span>Python</span>
               <span>Flask</span>
               <span>YOLOv8</span>
               <span>XGBoost</span>
               <span>SQLite</span>
               <span>A* Pathfinding</span>
-
             </div>
-
 
             <div class="project-links">
 
@@ -303,6 +347,7 @@
                 href="https://fredt-demo.onrender.com"
                 target="_blank"
                 rel="noreferrer"
+                data-i18n="liveDemo"
               >
                 Live Demo ↗
               </a>
@@ -314,130 +359,197 @@
         </article>
 
 
-        <!-- ================= OTHER PROJECTS ================= -->
+        <!-- ================= PROJECT 02 - NLP ================= -->
 
-        <div class="project-grid">
+        <article class="project-feature project-reverse reveal">
 
+          <div class="project-visual">
 
-          <!-- NLP PROJECT -->
+            <img
+              src="nlp-dashboard.png"
+              alt="Movie Sentiment Analyzer"
+              class="project-image"
+            />
 
-          <article class="project-card reveal">
+          </div>
+
+          <div class="project-copy">
 
             <span class="project-no">
               02
             </span>
 
-            <div class="icon-box">
-              NLP
-            </div>
-
-            <h4>
+            <h4 data-i18n="nlpTitle">
               Sentiment Analysis with Transformer Models
             </h4>
 
-            <p>
+            <p data-i18n="nlpText">
               Comparative NLP project using DistilBERT, RoBERTa, and BERT
-              for sentiment classification on IMDB reviews, including model
-              evaluation and performance comparison.
+              for sentiment classification on IMDb movie reviews, including
+              model evaluation, performance comparison, and an interactive
+              Streamlit application.
             </p>
 
-
             <div class="tags">
-
               <span>NLP</span>
+              <span>DistilBERT</span>
               <span>BERT</span>
               <span>RoBERTa</span>
-              <span>DistilBERT</span>
               <span>Python</span>
+              <span>Streamlit</span>
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href="https://sentiment-analysis-app-28pdfhma5cfwtepsy9wtms.streamlit.app/"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="liveDemo"
+              >
+                Live Demo ↗
+              </a>
+
+              <a
+                href="https://github.com/rnuqali/sentiment-analysis-app/blob/main/NLP_project_.ipynb"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="viewNotebook"
+              >
+                View Notebook ↗
+              </a>
 
             </div>
 
+          </div>
+
+        </article>
+
+
+        <!-- ================= PROJECT 03 - CKD ================= -->
+
+        <article class="project-feature reveal">
+
+          <div class="project-visual">
+
+            <img
+              src="ckd-dashboard.png"
+              alt="Chronic Kidney Disease Classification Dashboard"
+              class="project-image"
+            />
+
+          </div>
+
+          <div class="project-copy">
+
+            <span class="project-no">
+              03
+            </span>
+
+            <h4 data-i18n="ckdTitle">
+              Chronic Kidney Disease Prediction
+            </h4>
+
+            <p data-i18n="ckdText">
+              Machine learning project for CKD classification using Logistic
+              Regression and Naïve Bayes, with ROC/AUC evaluation, confusion
+              matrices, K-Means clustering, PCA visualization, and an
+              interactive prediction demo.
+            </p>
+
+            <div class="tags">
+              <span>Machine Learning</span>
+              <span>Python</span>
+              <span>Scikit-learn</span>
+              <span>Logistic Regression</span>
+              <span>Naïve Bayes</span>
+              <span>Streamlit</span>
+            </div>
 
             <div class="project-links">
-  <a
-    href="https://sentiment-analysis-app-28pdfhma5cfwtepsy9wtms.streamlit.app/"
-    target="_blank"
-    rel="noreferrer"
-  >
-    Live Demo ↗
-  </a>
 
-  <a
-    href="https://github.com/rnuqali/sentiment-analysis-app/blob/main/NLP_project_.ipynb"
-    target="_blank"
-    rel="noreferrer"
-  >
-    View Notebook ↗
-  </a>
-</div>
-          </article>
+              <a
+                href="https://ckd-classification-app-py2ajkcnlbapprvgrvtrm6u.streamlit.app/"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="liveDemo"
+              >
+                Live Demo ↗
+              </a>
 
+              <a
+                href="https://github.com/rnuqali/ckd-classification-app"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="viewCode"
+              >
+                View Code ↗
+              </a>
 
-          <!-- CKD PROJECT -->
-<article class="project-card reveal">
-  <span class="project-no">03</span>
+            </div>
 
-  <div class="icon-box">ML</div>
+          </div>
 
-  <h4>Chronic Kidney Disease Prediction</h4>
-
-  <p>
-    Machine learning project for CKD classification using Logistic Regression
-    and Naïve Bayes, with ROC/AUC evaluation, confusion matrices,
-    K-Means clustering, PCA visualization, and an interactive prediction demo.
-  </p>
-
-  <div class="tags">
-    <span>Machine Learning</span>
-    <span>Python</span>
-    <span>Scikit-learn</span>
-    <span>Logistic Regression</span>
-    <span>Naïve Bayes</span>
-  </div>
-
-  <div class="project-links">
-    <a
-      href="https://ckd-classification-app-py2ajkcnlbapprvgrvtrm6u.streamlit.app/"
-      target="_blank"
-      rel="noreferrer"
-    >
-      Live Demo ↗
-    </a>
-
-    <a
-      href="https://github.com/rnuqali/ckd-classification-app"
-      target="_blank"
-      rel="noreferrer"
-    >
-      View Code ↗
-    </a>
-  </div>
-</article>
+        </article>
 
 
-          <!-- REFERRAL PROJECT -->
+        <!-- ================= PROJECT 04 - SALESFORCE ================= -->
 
-          <article class="project-card reveal">
-  <span class="project-no">04</span>
+        <article class="project-feature project-reverse reveal">
 
-  <div class="icon-box">CRM</div>
+          <div class="project-visual">
 
-  <h4>Cloud-Based Hospital Referral System</h4>
+            <img
+              src="salesforce-referral-dashboard.png"
+              alt="Cloud-Based Hospital Referral System Dashboard"
+              class="project-image"
+            />
 
-  <p>
-    A cloud-based healthcare referral management system developed on the
-    Salesforce Platform to organize patient referrals and support referral
-    tracking through structured records, relationships, reports, and dashboards.
-  </p>
+          </div>
 
-  <div class="tags">
-    <span>Salesforce</span>
-    <span>Cloud Computing</span>
-    <span>PaaS</span>
-    <span>CRM</span>
-    <span>Reports & Dashboards</span>
-  </div>
-          </article>
+          <div class="project-copy">
+
+            <span class="project-no">
+              04
+            </span>
+
+            <h4 data-i18n="salesforceTitle">
+              Cloud-Based Hospital Referral System
+            </h4>
+
+            <p data-i18n="salesforceText">
+              A cloud-based healthcare referral management prototype developed
+              on the Salesforce Platform to organize patient records, manage
+              referrals, track priority and status, and provide reports and
+              dashboard visualizations.
+            </p>
+
+            <div class="tags">
+              <span>Salesforce</span>
+              <span>Cloud Computing</span>
+              <span>PaaS</span>
+              <span>CRM</span>
+              <span>Reports &amp; Dashboards</span>
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href="#"
+                class="disabled-link"
+                data-i18n="projectShowcase"
+              >
+                Project Showcase
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
     </section>
 
 
@@ -449,91 +561,78 @@
 
         <div class="section-heading reveal">
 
-          <p class="eyebrow dark">
+          <p class="eyebrow dark" data-i18n="skillsEyebrow">
             TOOLS &amp; TECHNOLOGIES
           </p>
 
-          <h3>
+          <h3 data-i18n="skillsTitle">
             Skills
           </h3>
 
         </div>
 
-
         <div class="skills-grid reveal">
-
 
           <div class="skill-group">
 
-            <h4>
+            <h4 data-i18n="skillsProgramming">
               Programming &amp; Web
             </h4>
 
             <div class="skill-list">
-
               <span>Python</span>
               <span>JavaScript</span>
               <span>HTML</span>
               <span>CSS</span>
               <span>Flask</span>
               <span>REST APIs</span>
-
             </div>
 
           </div>
 
-
           <div class="skill-group">
 
-            <h4>
+            <h4 data-i18n="skillsAI">
               AI &amp; Data
             </h4>
 
             <div class="skill-list">
-
               <span>Machine Learning</span>
               <span>YOLOv8</span>
               <span>XGBoost</span>
               <span>NLP</span>
               <span>Computer Vision</span>
-
             </div>
 
           </div>
 
-
           <div class="skill-group">
 
-            <h4>
+            <h4 data-i18n="skillsSystems">
               Systems &amp; Tools
             </h4>
 
             <div class="skill-list">
-
               <span>SQLite</span>
               <span>Git &amp; GitHub</span>
               <span>Linux (Basic)</span>
               <span>System Analysis</span>
               <span>Software Documentation</span>
-
             </div>
 
           </div>
 
-
           <div class="skill-group">
 
-            <h4>
+            <h4 data-i18n="skillsProfessional">
               Professional
             </h4>
 
             <div class="skill-list">
-
               <span>Problem Solving</span>
               <span>Agile Development</span>
               <span>IT Support</span>
               <span>Cybersecurity Fundamentals</span>
-
             </div>
 
           </div>
@@ -553,16 +652,15 @@
 
         <div class="section-heading centered reveal">
 
-          <p class="eyebrow">
+          <p class="eyebrow" data-i18n="background">
             BACKGROUND
           </p>
 
-          <h3>
+          <h3 data-i18n="educationExperience">
             Education &amp; Experience
           </h3>
 
         </div>
-
 
         <div class="timeline">
 
@@ -577,18 +675,17 @@
               2022 — 2026
             </div>
 
-
             <div class="timeline-card">
 
-              <h4>
+              <h4 data-i18n="degree">
                 Bachelor of Computer Science
               </h4>
 
-              <p class="muted">
+              <p class="muted" data-i18n="university">
                 Umm Al-Qura University · Makkah, Saudi Arabia
               </p>
 
-              <p>
+              <p data-i18n="educationDetails">
                 GPA 3.58/4.00 · Graduated with Honors
               </p>
 
@@ -607,18 +704,17 @@
               Mar — Jul 2025
             </div>
 
-
             <div class="timeline-card">
 
-              <h4>
+              <h4 data-i18n="internTitle">
                 IT Intern
               </h4>
 
-              <p class="muted">
+              <p class="muted" data-i18n="hospital">
                 Hiraa General Hospital · Makkah, Saudi Arabia
               </p>
 
-              <p>
+              <p data-i18n="internText">
                 Developed a referral management system, supported
                 troubleshooting and maintenance, participated in testing
                 and documentation, and collaborated with healthcare staff.
@@ -643,71 +739,51 @@
 
         <div class="section-heading reveal">
 
-          <p class="eyebrow dark">
+          <p class="eyebrow dark" data-i18n="learning">
             CONTINUOUS LEARNING
           </p>
 
-          <h3>
+          <h3 data-i18n="certificates">
             Certificates
           </h3>
 
         </div>
 
-
         <div class="certificate-grid">
 
           <div class="certificate reveal">
-
             <span>01</span>
-
             <p>
               Introduction to Cybersecurity — Cisco
             </p>
-
           </div>
 
-
           <div class="certificate reveal">
-
             <span>02</span>
-
             <p>
               AI ERA NEON Bootcamp — Artificial Intelligence Path
             </p>
-
           </div>
 
-
           <div class="certificate reveal">
-
             <span>03</span>
-
             <p>
               Performance Management — BSF Academy
             </p>
-
           </div>
 
-
           <div class="certificate reveal">
-
             <span>04</span>
-
             <p>
               Financial Institutions and Markets for Beginners — BSF Academy
             </p>
-
           </div>
 
-
           <div class="certificate reveal">
-
             <span>05</span>
-
             <p>
               Business Etiquette and Efficiency — BSF Academy
             </p>
-
           </div>
 
         </div>
@@ -723,19 +799,18 @@
 
       <div class="container contact-card reveal">
 
-        <p class="eyebrow">
+        <p class="eyebrow" data-i18n="contactEyebrow">
           LET'S CONNECT
         </p>
 
-        <h3>
+        <h3 data-i18n="contactTitle">
           Interested in working together?
         </h3>
 
-        <p>
+        <p data-i18n="contactText">
           I'm open to opportunities in AI, data, software,
           and technology roles.
         </p>
-
 
         <div class="contact-actions">
 
@@ -745,7 +820,6 @@
           >
             rnuqali@gmail.com
           </a>
-
 
           <a
             class="btn ghost"
@@ -775,7 +849,7 @@
         © <span id="year"></span> Rawan Nuqali
       </span>
 
-      <span>
+      <span data-i18n="footerText">
         Designed &amp; built with care.
       </span>
 
