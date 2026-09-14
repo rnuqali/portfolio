@@ -1412,4 +1412,17 @@ html[dir="rtl"] .back-to-top {
 .about-tag strong {
     font-weight: 700;
 }
+    .about-highlights {
+    margin-top: 28px;
+}
+
+.about-highlights p {
+    margin: 7px 0;
+    color: #285e30;
+    font-size: 15px;
+}
+
+.about-highlights strong {
+    font-weight: 700;
+}
 }
