@@ -133,9 +133,9 @@ const translations = {
     salesforceText:
       "A cloud-based healthcare referral management prototype developed on the Salesforce Platform to organize patient records, manage referrals, track priority and status, and provide reports and dashboard visualizations.",
 
-    liveDemo: "Live Demo ↗",
-    viewNotebook: "View Notebook ↗",
-    viewCode: "View Code ↗",
+    liveDemo: "Live Demo ",
+    viewNotebook: "View Notebook ",
+    viewCode: "View Code ",
     projectShowcase: "Project Showcase",
 
     skillsEyebrow: "TOOLS & TECHNOLOGIES",
@@ -293,13 +293,13 @@ const translations = {
       "نموذج أولي لنظام إحالات صحية مبني على منصة Salesforce لتنظيم سجلات المرضى، وإدارة الإحالات، وتتبع الأولوية والحالة، وعرض التقارير ولوحات المعلومات.",
 
     liveDemo:
-      "تجربة المشروع ↗",
+      "تجربة المشروع ",
 
     viewNotebook:
-      "عرض دفتر المشروع ↗",
+      "عرض دفتر المشروع ",
 
     viewCode:
-      "عرض الكود ↗",
+      "عرض الكود ",
 
     projectShowcase:
       "عرض المشروع",
