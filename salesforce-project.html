@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Hospital Referral System | Rawan Nuqali</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .showcase {
+      padding: 130px 0 90px;
+      min-height: 100vh;
+    }
+
+    .showcase-back {
+      display: inline-block;
+      margin-bottom: 35px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .showcase-header {
+      max-width: 850px;
+      margin-bottom: 55px;
+    }
+
+    .showcase-header h1 {
+      font-size: clamp(2.4rem, 5vw, 4.5rem);
+      line-height: 1.05;
+      margin: 10px 0 22px;
+    }
+
+    .showcase-header p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      opacity: 0.8;
+    }
+
+    .showcase-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .showcase-tags span {
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: #f0edff;
+      color: #5b46c5;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .showcase-section {
+      margin-top: 70px;
+    }
+
+    .showcase-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .feature-card {
+      padding: 24px;
+      border: 1px solid #e8e8ef;
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .feature-card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .feature-card p {
+      margin: 0;
+      line-height: 1.6;
+      opacity: 0.75;
+    }
+
+    .showcase-image {
+      margin-top: 30px;
+    }
+
+    .showcase-image img {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      border: 1px solid #e5e5ec;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+    }
+
+    .showcase-image h3 {
+      margin-bottom: 8px;
+    }
+
+    .showcase-image p {
+      margin-top: 0;
+      margin-bottom: 18px;
+      opacity: 0.7;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 700px) {
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .showcase {
+        padding-top: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="showcase">
+
+    <div class="container">
+
+      <a class="showcase-back" href="index.html#projects">
+        ← Back to Portfolio
+      </a>
+
+      <header class="showcase-header">
+
+        <p class="eyebrow dark">
+          SALESFORCE CLOUD PROJECT
+        </p>
+
+        <h1>
+          Cloud-Based Hospital Referral System
+        </h1>
+
+        <p>
+          A cloud-based healthcare referral management prototype developed
+          on the Salesforce Platform. The system organizes patient information,
+          manages hospital referrals, tracks referral priority and status,
+          and provides reports and dashboard visualizations for monitoring
+          referral activity.
+        </p>
+
+        <div class="showcase-tags">
+          <span>Salesforce</span>
+          <span>Cloud Computing</span>
+          <span>Custom Objects</span>
+          <span>Lookup Relationships</span>
+          <span>CRM</span>
+          <span>Reports &amp; Dashboards</span>
+        </div>
+
+      </header>
+
+
+      <section class="showcase-section">
+
+        <h2>Key Features</h2>
+
+        <div class="feature-grid">
+
+          <div class="feature-card">
+            <h3>Patient Management</h3>
+            <p>
+              Stores and manages patient information including age,
+              gender, phone number, and current hospital.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Referral Management</h3>
+            <p>
+              Creates hospital referral records linked to patients using
+              Salesforce lookup relationships.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Priority &amp; Status Tracking</h3>
+            <p>
+              Tracks referral priority levels and workflow status from
+              submission through completion.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Reports &amp; Dashboard</h3>
+            <p>
+              Visualizes referral activity by priority, status, and
+              destination hospital using Salesforce reports and dashboards.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="showcase-section">
+
+        <h2>System Showcase</h2>
+
+        <div class="showcase-image">
+
+          <h3>Hospital Referral Dashboard</h3>
+
+          <p>
+            Dashboard providing an overview of total referrals and their
+            distribution by priority, status, and destination hospital.
+          </p>
+
+          <img
+            src="salesforce-dashboard.png"
+            alt="Hospital Referral System Dashboard"
+          />
+
+        </div>
+
+
+        <div class="showcase-image">
+
+          <h3>Referral Records</h3>
+
+          <p>
+            Centralized referral records showing patient referrals managed
+            within the Salesforce application.
+          </p>
+
+          <img
+            src="salesforce-referrals.png"
+            alt="Hospital Referral Records"
+          />
+
+        </div>
+
+
+        <div class="showcase-image">
+
+          <h3>Referral Details</h3>
+
+          <p>
+            Detailed referral view containing the linked patient,
+            referring and destination hospitals, priority, status,
+            and doctor's notes.
+          </p>
+
+          <img
+            src="salesforce-referral-details.png"
+            alt="Hospital Referral Details"
+          />
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
