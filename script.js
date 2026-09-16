@@ -74,7 +74,7 @@ const translations = {
 
     heroEyebrow: "HELLO, I'M",
     heroTitle1: "Computer Science Graduate",
-    heroTitle2: "AI & Data Enthusiast",
+    heroTitle2: "AI & Data ",
 
     heroText:
       "I build practical software and AI-powered solutions with a focus on intelligent systems, data-driven decision making, and user-centered technology.",
