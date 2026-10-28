@@ -1635,3 +1635,30 @@ html[dir="rtl"] .journey-date{right:auto;left:24px}
 /* Requested refinement: smaller first-screen name, desktop and mobile */
 .hero h1 { font-size:clamp(34px,3.65vw,53px)!important; line-height:1.15!important; }
 @media(max-width:600px){ .hero h1{font-size:clamp(32px,8vw,42px)!important;} }
+
+/* Projects editorial showcase — image left, copy right */
+.projects-section{background:#fff}
+.project-feature,.project-feature.project-reverse{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)!important;
+  align-items:center!important;
+  width:min(100%,1160px)!important;
+  padding:20px!important;
+  gap:32px!important;
+  margin:0 auto 26px!important;
+  background:#fff!important;
+  border:1px solid #e7eee9!important;
+  border-radius:20px!important;
+  box-shadow:0 5px 20px rgba(14,68,36,.065)!important;
+}
+.project-feature .project-visual,.project-feature.project-reverse .project-visual{order:0!important;min-width:0!important}
+.project-feature .project-copy,.project-feature.project-reverse .project-copy{order:1!important;min-width:0!important;padding:8px 6px!important}
+.project-feature .project-visual{border-radius:12px!important;overflow:hidden!important}
+.project-feature .project-image{width:100%!important;aspect-ratio:1.55/1!important;object-fit:cover!important;border-radius:10px!important}
+.project-feature .project-copy h4{font-size:clamp(25px,2.8vw,35px)!important;margin:10px 0 15px!important}
+.project-feature .tags{margin-top:18px!important}
+.project-feature .project-links{margin-top:23px!important}
+@media(max-width:900px){
+ .project-feature,.project-feature.project-reverse{grid-template-columns:minmax(0,1fr)!important;gap:18px!important;padding:14px!important}
+ .project-feature .project-copy{padding:8px 5px 12px!important}
+}
