@@ -1,0 +1,1 @@
+Upload index.html and styles.css to the repository root. Upload the entire skill-icons folder (16 SVG files) to the same root. These are local SVG icons; technology brand-inspired and custom conceptual icons, not all official brand artwork. Existing script.js and project images remain unchanged.
