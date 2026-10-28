@@ -688,3 +688,41 @@ if (backToTop) {
   );
 
 }
+
+
+/* === Highlight navigation item for the section in view === */
+(function () {
+  const links = Array.from(document.querySelectorAll('#mainNav a[href^="#"]'));
+  const items = links.map(link => ({ link, section: document.querySelector(link.getAttribute('href')) }))
+    .filter(item => item.section);
+  if (!items.length) return;
+
+  let ticking = false;
+  function updateActiveSection() {
+    ticking = false;
+    const marker = window.scrollY + Math.min(window.innerHeight * 0.35, 220);
+    let active = items[0];
+    for (const item of items) {
+      if (item.section.offsetTop <= marker) active = item;
+    }
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8) {
+      active = items[items.length - 1];
+    }
+    items.forEach(({ link }) => {
+      const selected = link === active.link;
+      link.classList.toggle('active', selected);
+      if (selected) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+  }
+  function scheduleUpdate() {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(updateActiveSection);
+    }
+  }
+  window.addEventListener('scroll', scheduleUpdate, { passive: true });
+  window.addEventListener('resize', scheduleUpdate);
+  window.addEventListener('load', updateActiveSection);
+  updateActiveSection();
+})();
