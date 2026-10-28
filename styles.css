@@ -1740,3 +1740,29 @@ main { background:#ffffff!important; }
 .project-feature .tags span,.expertise-tools span,.journey-tags span { background:#f4faf6!important; border-color:#e6efe9!important; }
 .expertise-symbol,.journey-date { background:#eff8f2!important; }
 .section { scroll-margin-top:75px; }
+
+/* Reference-inspired atmospheric edge glow: airy cyan left, mint right, white center. */
+html { background:#fff!important; }
+body {
+  background:
+    radial-gradient(ellipse 34% 26% at 0% 25%, rgba(198,240,249,.44) 0%, rgba(218,246,251,.24) 48%, transparent 100%),
+    radial-gradient(ellipse 37% 28% at 100% 16%, rgba(195,250,225,.48) 0%, rgba(222,251,236,.24) 54%, transparent 100%),
+    radial-gradient(ellipse 31% 24% at 0% 63%, rgba(205,242,249,.32) 0%, transparent 100%),
+    radial-gradient(ellipse 34% 26% at 100% 77%, rgba(208,248,227,.34) 0%, transparent 100%),
+    #fff!important;
+  background-attachment:fixed!important;
+}
+main, .hero, .section, .light, .projects-section, .expertise-section,
+.timeline-section, .certificates-section, .contact-section {
+  background:transparent!important;
+}
+.site-header { background:rgba(255,255,255,.97)!important; }
+.project-feature, .project-feature.project-reverse, .expertise-card,
+.journey-card, .certificate { background:#fff!important; }
+@media(max-width:700px){
+  body { background:
+    radial-gradient(ellipse 65% 22% at 0% 19%, rgba(198,240,249,.38), transparent 100%),
+    radial-gradient(ellipse 65% 25% at 100% 38%, rgba(195,250,225,.42), transparent 100%),
+    radial-gradient(ellipse 65% 25% at 0% 76%, rgba(205,242,249,.27), transparent 100%),
+    #fff!important; background-attachment:fixed!important; }
+}
