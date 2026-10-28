@@ -1845,3 +1845,9 @@ html[dir="rtl"] .project-feature .project-links a::after {content:none!important
   .section-heading h3,
   .timeline-section .section-heading h3 { font-size: 26px !important; }
 }
+
+/* Final precision update: copy icon and no decorative button arrows */
+.contact-copy {display:inline-flex;align-items:center;justify-content:center;}
+.contact-copy .copy-icon {display:block;width:19px;height:19px;flex-shrink:0;}
+.project-feature .project-links a::after {content:none!important;display:none!important;}
+.contact-method-arrow {display:none!important;}
