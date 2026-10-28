@@ -443,22 +443,22 @@
   <div class="expertise-top"><span class="expertise-symbol" aria-hidden="true">&lt;/&gt;</span><span class="expertise-number">01</span></div>
   <h4><span class="expertise-en">Software Development</span><span class="expertise-ar">تطوير البرمجيات</span></h4>
   <p><span class="expertise-en">Building web applications and practical systems, from interfaces to backend logic and database integration.</span><span class="expertise-ar">تطوير تطبيقات الويب والأنظمة العملية، من الواجهات إلى منطق الخادم وربط قواعد البيانات.</span></p>
-  <div class="expertise-tools"><span>Python</span><span>JavaScript</span><span>HTML &amp; CSS</span><span>Flask</span><span>PHP</span><span>REST APIs</span></div>
+  <div class="expertise-tools"><button type="button" class="expertise-chip" aria-pressed="false">Python</button><button type="button" class="expertise-chip" aria-pressed="false">JavaScript</button><button type="button" class="expertise-chip" aria-pressed="false">HTML &amp; CSS</button><button type="button" class="expertise-chip" aria-pressed="false">Flask</button><button type="button" class="expertise-chip" aria-pressed="false">PHP</button><button type="button" class="expertise-chip" aria-pressed="false">REST APIs</button></div>
 </article><article class="expertise-card reveal">
   <div class="expertise-top"><span class="expertise-symbol" aria-hidden="true">AI</span><span class="expertise-number">02</span></div>
   <h4><span class="expertise-en">AI & Machine Learning</span><span class="expertise-ar">الذكاء الاصطناعي وتعلم الآلة</span></h4>
   <p><span class="expertise-en">Applying machine learning, NLP and computer vision to prediction, classification and intelligent decision support.</span><span class="expertise-ar">تطبيق تعلم الآلة ومعالجة اللغة والرؤية الحاسوبية للتنبؤ والتصنيف ودعم اتخاذ القرار.</span></p>
-  <div class="expertise-tools"><span>Machine Learning</span><span>YOLOv8</span><span>XGBoost</span><span>NLP</span><span>Computer Vision</span></div>
+  <div class="expertise-tools"><button type="button" class="expertise-chip" aria-pressed="false">Machine Learning</button><button type="button" class="expertise-chip" aria-pressed="false">YOLOv8</button><button type="button" class="expertise-chip" aria-pressed="false">XGBoost</button><button type="button" class="expertise-chip" aria-pressed="false">NLP</button><button type="button" class="expertise-chip" aria-pressed="false">Computer Vision</button></div>
 </article><article class="expertise-card reveal">
   <div class="expertise-top"><span class="expertise-symbol" aria-hidden="true">DB</span><span class="expertise-number">03</span></div>
   <h4><span class="expertise-en">Data & Databases</span><span class="expertise-ar">البيانات وقواعد البيانات</span></h4>
   <p><span class="expertise-en">Working with SQL databases, data preparation, analysis and model evaluation to turn information into insights.</span><span class="expertise-ar">التعامل مع قواعد بيانات SQL وتجهيز البيانات وتحليلها وتقييم النماذج لاستخلاص نتائج مفيدة.</span></p>
-  <div class="expertise-tools"><span>SQL</span><span>MySQL</span><span>SQLite</span><span>Python</span><span>Data Analysis</span></div>
+  <div class="expertise-tools"><button type="button" class="expertise-chip" aria-pressed="false">SQL</button><button type="button" class="expertise-chip" aria-pressed="false">MySQL</button><button type="button" class="expertise-chip" aria-pressed="false">SQLite</button><button type="button" class="expertise-chip" aria-pressed="false">Python</button><button type="button" class="expertise-chip" aria-pressed="false">Data Analysis</button></div>
 </article><article class="expertise-card reveal">
   <div class="expertise-top"><span class="expertise-symbol" aria-hidden="true">IT</span><span class="expertise-number">04</span></div>
   <h4><span class="expertise-en">IT & Systems</span><span class="expertise-ar">تقنية المعلومات والأنظمة</span></h4>
   <p><span class="expertise-en">Supporting users, troubleshooting technical issues, analyzing system requirements and documenting solutions.</span><span class="expertise-ar">دعم المستخدمين وحل المشكلات التقنية وتحليل متطلبات الأنظمة وتوثيق الحلول.</span></p>
-  <div class="expertise-tools"><span>IT Support</span><span>Git &amp; GitHub</span><span>Linux (Basic)</span><span>System Analysis</span><span>Documentation</span></div>
+  <div class="expertise-tools"><button type="button" class="expertise-chip" aria-pressed="false">IT Support</button><button type="button" class="expertise-chip" aria-pressed="false">Git &amp; GitHub</button><button type="button" class="expertise-chip" aria-pressed="false">Linux (Basic)</button><button type="button" class="expertise-chip" aria-pressed="false">System Analysis</button><button type="button" class="expertise-chip" aria-pressed="false">Documentation</button></div>
 </article></div>
   </div>
 </section>
@@ -657,6 +657,16 @@
   </script>
   <script src="script.js"></script>
 
+
+  <script>
+    // Expertise chips: click changes only the selected chip color.
+    document.querySelectorAll('.expertise-chip').forEach(function(chip) {
+      chip.addEventListener('click', function() {
+        var selected = chip.getAttribute('aria-pressed') === 'true';
+        chip.setAttribute('aria-pressed', String(!selected));
+      });
+    });
+  </script>
 </body>
 
 </html>
