@@ -1777,32 +1777,16 @@ main, .hero, .section, .light, .projects-section, .expertise-section,
 .contact-section .contact-card p {color:#235339!important;}
 .contact-section .contact-card .eyebrow {color:#075a2a!important;}
 
-/* Dark forest-green contact feature, matching the supplied visual reference */
+/* Contact color-only correction: original compact layout, spacing, typography and buttons unchanged. */
 .contact-section .contact-card {
-  display:grid!important;grid-template-columns:minmax(0,1.55fr) minmax(290px,.85fr)!important;
-  align-items:center!important;gap:55px!important;text-align:left!important;
-  padding:52px 48px!important;border-radius:24px!important;
-  background:#005319!important;border:1px solid #005319!important;
-  box-shadow:0 16px 36px rgba(0,70,27,.13)!important;color:#fff!important;
+  background:#075a2a!important;
+  border-color:#075a2a!important;
 }
-.contact-section .contact-card .eyebrow {
-  display:inline-flex!important;width:max-content!important;padding:7px 13px!important;
-  border-radius:30px!important;background:rgba(255,255,255,.13)!important;
-  color:#c5efd1!important;font-size:12px!important;font-weight:800!important;
-}
-.contact-section .contact-card h3 {color:#fff!important;font-size:clamp(34px,3.7vw,55px)!important;line-height:1.13!important;max-width:650px!important;margin:19px 0!important;}
-.contact-section .contact-card .contact-intro>p:last-child {color:#d0e9d5!important;font-size:17px!important;line-height:1.7!important;max-width:600px!important;}
-.contact-section .contact-methods {display:flex!important;flex-direction:column!important;gap:12px!important;max-width:none!important;margin:0!important;width:100%!important;text-align:left!important;}
-.contact-section .contact-method {display:flex!important;width:100%!important;gap:9px!important;}
-.contact-section .contact-method-link {background:#fff!important;color:#075a2a!important;border:1px solid #fff!important;border-radius:12px!important;box-shadow:none!important;min-height:65px!important;}
-.contact-section .contact-method-info small {color:#3d7050!important;}
-.contact-section .contact-copy {background:rgba(255,255,255,.13)!important;color:#fff!important;border:1px solid rgba(255,255,255,.27)!important;border-radius:12px!important;}
-.contact-section .contact-copy:hover {background:rgba(255,255,255,.22)!important;}
-.contact-social-link {display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 18px;min-height:52px;color:#fff!important;border:1px solid rgba(255,255,255,.28);border-radius:12px;text-decoration:none;font-size:14px;font-weight:750;transition:background .2s;}
-.contact-social-link:hover {background:rgba(255,255,255,.1);}
-.contact-section .contact-phone .contact-method-link {background:transparent!important;color:#fff!important;border-color:rgba(255,255,255,.28)!important;}
-.contact-section .contact-phone .contact-method-info small {color:#d0e9d5!important;}
-.contact-section .contact-phone .contact-copy {background:transparent!important;}
-html[dir="rtl"] .contact-section .contact-card,html[dir="rtl"] .contact-section .contact-methods{text-align:right!important;}
-html[dir="rtl"] .contact-section .contact-method-arrow{margin-left:0;margin-right:auto;}
-@media(max-width:850px){.contact-section .contact-card{grid-template-columns:1fr!important;gap:30px!important;padding:34px 25px!important}.contact-section .contact-card h3{font-size:clamp(31px,7vw,44px)!important}}
+.contact-section .contact-card h3,
+.contact-section .contact-card p,
+.contact-section .contact-card .eyebrow {color:#ffffff!important;}
+.contact-section .contact-card .contact-method-link {background:#ffffff!important;}
+.contact-section .contact-card .contact-method-info strong,
+.contact-section .contact-card .contact-method-info small,
+.contact-section .contact-card .contact-method-icon,
+.contact-section .contact-card .contact-method-arrow {color:#075a2a!important;}
