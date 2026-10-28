@@ -1550,3 +1550,21 @@ html[dir="rtl"] .hero h1{letter-spacing:normal!important;}
   .project-visual { min-height: 240px; }
   .project-image { min-height: 220px; }
 }
+
+/* Skills: official technology colors + soft mint tiles. Scoped to #skills only. */
+#skills { background: linear-gradient(135deg,#fbfefc 0%,#f4fbf7 55%,#ffffff 100%); }
+#skills .skill-group { background:rgba(255,255,255,.94); border:1px solid #e0eee6; box-shadow:0 10px 32px rgba(17,82,46,.055); transition:transform .25s ease,box-shadow .25s ease; }
+#skills .skill-group:hover { transform:translateY(-3px);box-shadow:0 18px 42px rgba(17,82,46,.095); }
+#skills .skill-group h4 { margin:0 0 20px; color:#1c4e35; font-size:19px; }
+#skills .skill-logo-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+#skills .skill-tile { min-width:0; min-height:108px; padding:16px 7px 12px; display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;background:linear-gradient(145deg,#fff,#f6fcf8);border:1px solid #e8f1eb;border-radius:15px;box-shadow:0 3px 9px rgba(15,70,38,.025);transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease; }
+#skills .skill-tile:hover { transform:translateY(-4px);border-color:#c6e8d2;box-shadow:0 12px 24px rgba(19,88,51,.10); }
+#skills .skill-icon { width:42px;height:42px;display:flex;align-items:center;justify-content:center; }
+#skills .skill-icon img { width:40px;height:40px;object-fit:contain; }
+#skills .skill-name { color:#284b38; font-size:12px;font-weight:700;line-height:1.35;overflow-wrap:anywhere; }
+#skills .skill-monogram { width:42px;height:42px;display:flex;align-items:center;justify-content:center;border-radius:12px;background:#e6f4ec;color:#246446;font-size:13px;font-weight:800;letter-spacing:-.03em; }
+#skills .skill-group:nth-child(2) .skill-monogram {background:#e9f0ff;color:#315aa3;}
+#skills .skill-group:nth-child(3) .skill-monogram {background:#f1ebfb;color:#6b49a0;}
+#skills .skill-group:nth-child(4) .skill-list span {background:#edf8f1;color:#245c40;border:1px solid #d9ede0;border-radius:11px;padding:10px 13px;}
+@media(max-width:600px){#skills .skill-group{padding:20px 16px}#skills .skill-logo-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}#skills .skill-tile{min-height:102px;padding:12px 5px}#skills .skill-name{font-size:11px}}
+@media(max-width:380px){#skills .skill-logo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
