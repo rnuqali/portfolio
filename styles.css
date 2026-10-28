@@ -1631,3 +1631,7 @@ html[dir="rtl"] .journey-date{right:auto;left:24px}
 .project-visual{padding:0!important;background:transparent!important;box-shadow:none!important;border:0!important;min-height:0!important;border-radius:15px!important;overflow:hidden!important}
 .project-image{display:block;width:100%;height:auto;min-height:0!important;aspect-ratio:1.45/1;object-fit:cover;border-radius:13px!important;box-shadow:none!important}
 @media(max-width:900px){.project-feature{padding:12px!important;gap:18px!important}}
+
+/* Requested refinement: smaller first-screen name, desktop and mobile */
+.hero h1 { font-size:clamp(34px,3.65vw,53px)!important; line-height:1.15!important; }
+@media(max-width:600px){ .hero h1{font-size:clamp(32px,8vw,42px)!important;} }
