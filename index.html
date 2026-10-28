@@ -74,12 +74,10 @@
 
         <a
           class="nav-cta"
-          href="Rawan_Nuqali_Resume.pdf"
-          target="_blank"
-          rel="noreferrer"
-          data-i18n="resume"
+          href="#contact"
+          data-i18n="navContact"
         >
-          Resume
+          Contact
         </a>
 
         <button
@@ -138,25 +136,11 @@
           </p>
 
           <div class="hero-actions">
-
-            <a
-              class="btn primary"
-              href="#projects"
-              data-i18n="viewProjects"
-            >
-              View Projects
+            <a class="btn primary" href="Rawan_Nuqali_Resume.pdf" target="_blank" rel="noreferrer" data-i18n="downloadCV">Download CV</a>
+            <a class="btn secondary" href="#projects" aria-label="View my work">
+              <span class="hero-work-en">View My Work</span>
+              <span class="hero-work-ar">شاهد أعمالي</span>
             </a>
-
-            <a
-              class="btn secondary"
-              href="Rawan_Nuqali_Resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              data-i18n="downloadCV"
-            >
-              Download CV
-            </a>
-
           </div>
 
         </div>
@@ -758,25 +742,25 @@
           and technology roles.
         </p>
 
-        <div class="contact-actions">
-
-          <a
-            class="btn white"
-            href="mailto:rnuqali@gmail.com"
-          >
-            rnuqali@gmail.com
-          </a>
-
-          <a
-            class="btn ghost"
-            href="https://linkedin.com/in/rnuqali"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn ↗
-          </a>
-
+        <div class="contact-methods">
+          <div class="contact-method">
+            <a class="contact-method-link" href="mailto:rnuqali@gmail.com" aria-label="Email Rawan">
+              <span class="contact-method-icon" aria-hidden="true">✉</span>
+              <span class="contact-method-info"><strong class="contact-en">Email me</strong><strong class="contact-ar">راسليني</strong><small>rnuqali@gmail.com</small></span>
+              <span class="contact-method-arrow" aria-hidden="true">↗</span>
+            </a>
+            <button type="button" class="contact-copy" data-copy="rnuqali@gmail.com" aria-label="Copy email" title="Copy email">▢</button>
+          </div>
+          <div class="contact-method">
+            <a class="contact-method-link" href="tel:+966560089141" aria-label="Call Rawan">
+              <span class="contact-method-icon" aria-hidden="true">☎</span>
+              <span class="contact-method-info"><strong class="contact-en">Call me</strong><strong class="contact-ar">اتصلي بي</strong><small dir="ltr">0560089141</small></span>
+              <span class="contact-method-arrow" aria-hidden="true">↗</span>
+            </a>
+            <button type="button" class="contact-copy" data-copy="0560089141" aria-label="Copy phone number" title="Copy phone number">▢</button>
+          </div>
         </div>
+        <a class="contact-linkedin" href="https://linkedin.com/in/rnuqali" target="_blank" rel="noreferrer">LinkedIn ↗</a>
 
       </div>
 
@@ -807,6 +791,22 @@
     ↑
   </button>
 
+  <script>
+    document.querySelectorAll('.contact-copy').forEach(function(button) {
+      button.addEventListener('click', async function() {
+        var value = button.getAttribute('data-copy');
+        try {
+          await navigator.clipboard.writeText(value);
+          var oldText = button.textContent;
+          button.textContent = '✓';
+          button.setAttribute('aria-label', 'Copied');
+          setTimeout(function(){button.textContent = oldText; button.setAttribute('aria-label', 'Copy');}, 1600);
+        } catch (err) {
+          window.prompt('Copy:', value);
+        }
+      });
+    });
+  </script>
   <script src="script.js"></script>
 
 </body>
