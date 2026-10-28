@@ -1696,3 +1696,47 @@ html[dir="rtl"] .expertise-card{text-align:right}
 .project-feature .project-links a:nth-child(2):hover{background:#effaf3!important;transform:translateY(-2px)}
 html[dir="rtl"] .project-feature .project-links a::after{content:"↖"!important}
 @media(max-width:600px){.project-feature .project-links a:not(.disabled-link){width:auto!important;flex:1 1 145px;padding:11px 14px!important}}
+
+/* === Unified forest / soft mint palette across the entire portfolio === */
+:root{--forest:#075a2a;--forest-dark:#06471f;--mint-soft:#edf8f1;--mint-border:#deeee3;--site-bg:#f8fbf9;--site-ink:#132d1d}
+html{background:var(--site-bg)}
+body{background:var(--site-bg)!important;color:var(--site-ink)}
+.site-header{background:rgba(255,255,255,.97)!important;border-bottom:1px solid var(--mint-border)}
+.hero{background:radial-gradient(ellipse 52% 75% at 86% 48%,#e5f6ea 0%,#f5fbf7 68%,transparent 100%),var(--site-bg)!important}
+.light,.projects-section,.expertise-section,.timeline-section,.certificates-section,.contact-section{background:var(--site-bg)!important}
+.expertise-section{background:linear-gradient(180deg,#f8fbf9,#f1f8f3)!important}
+.timeline-section{background:linear-gradient(180deg,#f7fbf8,#edf7f0)!important}
+.contact-section{background:var(--site-bg)!important}
+.contact-card{background:linear-gradient(135deg,#f0f9f3 0%,#e6f4eb 100%)!important;border:1px solid var(--mint-border)!important;box-shadow:0 12px 38px rgba(7,90,42,.06)!important}
+.contact-card h3,.contact-card p{color:var(--site-ink)}
+.project-feature,.project-feature.project-reverse,.expertise-card,.journey-card,.certificate{background:#fff!important;border-color:var(--mint-border)!important;box-shadow:0 8px 28px rgba(7,90,42,.055)!important}
+.project-feature:hover,.expertise-card:hover,.journey-card:hover{box-shadow:0 15px 35px rgba(7,90,42,.095)!important}
+.project-feature .tags span,.expertise-tools span,.journey-tags span{background:var(--mint-soft)!important;color:var(--forest)!important;border:1px solid var(--mint-border)!important;border-radius:9px!important}
+.expertise-symbol{background:var(--mint-soft)!important;color:var(--forest)!important}
+.journey-date{background:var(--mint-soft)!important;color:var(--forest)!important;border-color:var(--mint-border)!important}
+.btn.primary,.btn.white,.nav-cta,.project-feature .project-links a:first-child:not(.disabled-link){background:var(--forest)!important;color:#fff!important;border:1.5px solid var(--forest)!important;box-shadow:none!important}
+.btn.primary:hover,.btn.white:hover,.nav-cta:hover,.project-feature .project-links a:first-child:hover{background:var(--forest-dark)!important;border-color:var(--forest-dark)!important}
+.btn.secondary,.btn.ghost,.project-feature .project-links a:nth-child(2):not(.disabled-link){background:#fff!important;color:var(--forest)!important;border:1.5px solid var(--forest)!important;box-shadow:none!important}
+.btn.secondary:hover,.btn.ghost:hover,.project-feature .project-links a:nth-child(2):hover{background:var(--mint-soft)!important;color:var(--forest)!important}
+.btn,.project-feature .project-links a:not(.disabled-link){border-radius:11px!important}
+.contact-method-link{background:#fff!important;border-color:var(--mint-border)!important;color:var(--forest)!important;box-shadow:0 6px 18px rgba(7,90,42,.05)!important}
+.contact-copy{background:#fff!important;border:1px solid var(--mint-border)!important;color:var(--forest)!important}
+.contact-linkedin{color:var(--forest)!important}
+.language-toggle{background:var(--mint-soft)!important;border-color:var(--mint-border)!important;color:var(--forest)!important}
+footer{background:#123c25!important}
+
+
+/* White editorial background — matches the reference's restrained use of mint */
+:root { --site-bg:#ffffff; --mint-border:#e7eee9; --mint-soft:#f1f8f3; }
+html,body { background:#ffffff!important; }
+main { background:#ffffff!important; }
+.site-header { background:rgba(255,255,255,.97)!important; border-bottom:1px solid #edf1ee!important; }
+.hero { background:#ffffff!important; }
+.light,.projects-section,.expertise-section,.timeline-section,.certificates-section,.contact-section { background:#ffffff!important; }
+.expertise-section,.timeline-section { background:#ffffff!important; }
+.project-feature,.project-feature.project-reverse,.expertise-card,.journey-card,.certificate { background:#ffffff!important; border:1px solid #e8eeea!important; box-shadow:0 8px 24px rgba(20,55,34,.045)!important; }
+.project-feature:hover,.expertise-card:hover,.journey-card:hover { box-shadow:0 16px 34px rgba(20,55,34,.075)!important; }
+.contact-card { background:#fafcfb!important; border:1px solid #e8eeea!important; box-shadow:0 10px 30px rgba(20,55,34,.045)!important; }
+.project-feature .tags span,.expertise-tools span,.journey-tags span { background:#f4faf6!important; border-color:#e6efe9!important; }
+.expertise-symbol,.journey-date { background:#eff8f2!important; }
+.section { scroll-margin-top:75px; }
