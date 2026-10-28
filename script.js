@@ -94,6 +94,8 @@ const translations = {
     aboutText2:
       "My work spans machine learning, computer vision, web development, system analysis, and intelligent decision-support systems.",
 
+    honorsTag: "Second-Class Honors",
+    graduationTag: "Class of 2026",
     gpa: "GPA",
     honors: "Honors",
     graduate: "Graduate",
