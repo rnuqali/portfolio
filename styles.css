@@ -1568,3 +1568,11 @@ html[dir="rtl"] .hero h1{letter-spacing:normal!important;}
 #skills .skill-group:nth-child(4) .skill-list span {background:#edf8f1;color:#245c40;border:1px solid #d9ede0;border-radius:11px;padding:10px 13px;}
 @media(max-width:600px){#skills .skill-group{padding:20px 16px}#skills .skill-logo-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}#skills .skill-tile{min-height:102px;padding:12px 5px}#skills .skill-name{font-size:11px}}
 @media(max-width:380px){#skills .skill-logo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* RN square identity — header only */
+.site-header .brand {display:inline-flex;align-items:center;gap:10px;text-decoration:none;letter-spacing:normal;min-width:0;}
+.site-header .brand-mark {width:43px;height:43px;display:grid;place-items:center;flex:0 0 43px;background:linear-gradient(145deg,#075d2d,#003e1d);border-radius:11px;color:#fff!important;font-size:17px;font-weight:800;letter-spacing:-.07em;box-shadow:0 4px 11px rgba(0,70,33,.15);}
+.site-header .brand-name {display:flex;flex-direction:column;color:#183b27!important;font-size:14px;font-weight:800;line-height:1.18;letter-spacing:-.025em;}
+.site-header .brand-name small {margin-top:4px;font-size:9px;letter-spacing:.085em;color:#567e65;font-weight:750;white-space:nowrap;}
+@media(max-width:1100px){.site-header .brand-name{display:none}}
+@media(max-width:600px){.site-header .brand-mark{width:40px;height:40px;flex-basis:40px}}
