@@ -1790,3 +1790,27 @@ main, .hero, .section, .light, .projects-section, .expertise-section,
 .contact-section .contact-card .contact-method-info small,
 .contact-section .contact-card .contact-method-icon,
 .contact-section .contact-card .contact-method-arrow {color:#075a2a!important;}
+
+
+/* White Footer */
+.site-footer,
+footer {
+  background: #FFFFFF !important;
+  background-image: none !important;
+  color: #777F7B !important;
+  border-top: 1px solid #E8ECE9;
+}
+
+.site-footer p,
+.site-footer span,
+.site-footer a,
+footer p,
+footer span,
+footer a {
+  color: #777F7B !important;
+}
+
+.site-footer a:hover,
+footer a:hover {
+  color: #075A2A !important;
+}
